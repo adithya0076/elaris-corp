@@ -1,4 +1,6 @@
-web: gunicorn elaris.wsgi --log-file -
-web: gunicorn elaris.wsgi
-web: python manage.py runserver
 
+
+
+web: gunicorn elaris.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
