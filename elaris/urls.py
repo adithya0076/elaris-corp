@@ -30,6 +30,7 @@ urlpatterns = [
     path('thanks', thanks,  name='thanks_view'),
     path('thanks2', thanks2, name='thanks2_view'),
     path('joinus', joinus, name='join_view'),
+    path('technology_partners', technology_partners, name='technology_partners'),
     path('job_detail/<int:myid>/', job_detail, name='job_detail'),
     path('job_apply/<int:myid>/', job_apply, name='job_apply'),
 

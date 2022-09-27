@@ -77,6 +77,7 @@ class ContactView(View):
 				message = "\n".join(body.values())
 				# send_mail(subject, message, 'eavhshelumiel@gmail.com', ['eavshelumiel@gmail.com'])
 				send_mail(
+
 					subject=subject,
 					message=message,
 					from_email=settings.EMAIL_HOST_USER,
@@ -146,3 +147,9 @@ def job_detail(request, myid):
 	description = job.description
 	form = JobDetailForm()
 	return render(request, "job_detail.html", {'job': job, 'description': description, 'form': form })
+
+def technology_partners(request):
+	template = 'technology_partners.html'
+	context = {}
+
+	return render(request, template, context)
