@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-w*j8k*s3d)-mpr(&8gt%0_bp)tri2j$!c4ic50=-*b17(!9n$&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = ['127.0.0.1', 'elaris.onrender.com']
 ALLOWED_HOSTS = ['https://pdelaris.herokuapp.com/']
